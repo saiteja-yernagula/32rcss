@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* grouping selector: it is used to appply same to the different
+group of the elemetns
+ h1, p, .el1,div, #para1{
+    color:white;
+    background:blue;
+} */
+
+/* universal selector */
+     *{
+        border:1px solid red;
+     } 
+
+     /* 
+     what is css
+     ways to insert css
+     precedence
+     types of selectors
+     simple selectors
+     class and id 
+     
+     */
+*{
+    color:red
+}
+     
+        </style>
+</head>
+<body>
+    <!--
+     html- structure for an website
+     git 
+     
+     css- cascading style sheets
+
+     css is used to create the visuaal presentation
+     of the document
+     it deals with the colors, fonts, backgrounds,
+     animations, transitions , layouts  and media queries etc
+     
+     style sheet language- css3
+
+     how to insert css
+     1) inline css
+
+        <h1 style="propertyname:propertyvalue;property:value">some content</h1>
+        <h1 style="color:red;font-size:20px">some content</h1>
+       
+     2) internal css
+        
+        it is defined in head section with the help of style tag
+     3) external css
+
+
+
+
+     
+css syntax
+
+
+propertyname:propertyvalue; prp2:value2:
+     declaration              declaration
+
+
+     selector{
+     propertyname:propertyvalue;
+           //declaration             
+     }
+
+     selector : it is used to target or
+      point out the html element for appplying styles
+
+
+      precedence
+      inline have a high precedence
+      based on the flow of declaration- nearest one will apply
+        internal have a high precedence than external
+        external have a low precedence than internal
+
+        types of selectors
+        1) simple selector
+           1) element selector or tagname selector
+             element : used to appply styles to the element based on the tagname
+             id : based on id
+             class :based on class 
+
+
+             class 
+             class is denoted with .classname
+             class is used to apply styles to the group- 
+                     we can take multiple classnames
+             we can take multiple class name in the same element
+
+             id
+             id is denoted with #idname
+             id is used to apply  styles to the unique element(single element)
+                           -id is unique
+
+           2) class selector
+           3) id selector
+           4) grouping selector
+           5) universal selector
+
+        2)  combinators
+        3) pseudo class selectors
+        4) pseudo element selectors
+        5) attribute selectors
+
+
+        specificity:
+        specificity is used to determine which style will be applied to 
+        the element  when the element is targeted by multiple selectors
+        id have high specificity
+        class have high specifictiy than tagname
+        tagname have low specificity than class
+        
+     -->
+
+     <h1>some content</h1>
+     <h2>some heading 2</h2>
+     <h3>some heading 3</h3>
+
+
+  
+
+</body>
+</html>
