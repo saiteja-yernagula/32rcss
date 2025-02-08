@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container{
+            margin:50px;
+            border:1px solid blue;
+            height: 80vh;
+            position: relative;
+        }
+
+        .child{
+            background: lightsalmon;
+            padding:20px;
+            margin:2%;
+            display: inline-block;
+            width:20%
+        }
+
+        #el2{
+            background: lightblue;
+            position: absolute;
+            right:0;
+            top:-40px;
+         
+         
+        }
+
+        .el1{
+            font-size: 50px;
+            color:green;
+            position: sticky;
+            top:20px;
+          
+        }
+
+        header{
+            background: lightgreen;
+            position: sticky;
+            /* top:0; */
+            z-index: 100;
+            bottom:0;
+            top:0;
+         
+        }
+        header>h1,header>ul,li{
+            display: inline-block;
+        }
+
+        .parent{
+            background: lightseagreen;
+            position: sticky;
+            top:0;
+            height: 50vh;
+
+        }
+
+        .parenta{
+            background: red;
+            padding:20px;
+       
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+
+    units 
+    absolute units 
+    px , cm , m ,mm inch
+
+    relative units
+    % - parent (m, p, width)
+    em - parent font size (fontsize)
+    rem  - root element font size (fontsize)
+    vw vh - viewport - (width and height)
+    
+    positions: used to control final postion of element
+             by  applying top  right bottom left z-index
+
+    types of postiion
+    static - default position
+    relative - relative to its own position, 
+               normal flow of the doc
+    absolute - out of the flow
+               moves based on viewport if there no postioned parent
+               moves within the parent
+
+
+               z-index: it controls stack order of an element
+    fixed
+
+
+    sticky
+    
+    
+    
+    -->
+
+ 
+
+    <!-- <img src="https://img.freepik.com/premium-psd/whatsapp-logo-3d-render_68185-1130.jpg?semt=ais_hybrid" alt=""> -->
+   
+    <div class="el1">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <h1>heading 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quas fugiat, facere ut maiores possimus quisquam laudantium doloremque nobis eius distinctio blanditiis. Dicta, eligendi dolorem quam iusto natus exercitationem aut?</p>
+    
+
+    <h1>heading 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quas fugiat, facere ut maiores possimus quisquam laudantium doloremque nobis eius distinctio blanditiis. Dicta, eligendi dolorem quam iusto natus exercitationem aut?</p>
+    
+
+
+    <div class="parent">
+        hello
+        <div class="parenta">nested box</div>
+    </div>
+
+    <h1>heading 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quas fugiat, facere ut maiores possimus quisquam laudantium doloremque nobis eius distinctio blanditiis. Dicta, eligendi dolorem quam iusto natus exercitationem aut?</p>
+    
+
+
+    
+
+
+    <div class="container">
+        <div class="child">some content</div>
+        <div class="child " id="el2">some content</div>
+        <div class="child">some content</div>
+    </div> 
+
+
+
+    
+   <header>
+    <h1>branding</h1>
+    <ul>
+        <li>content</li>
+        <li>content</li>
+        <li>content</li>
+    </ul>
+   </header>
+    
+    
+    <div class="container">
+        <div class="child">some content</div>
+        <div class="child " id="el2">some content</div>
+        <div class="child">some content</div>
+    </div>
+
+  
+</body>
+</html>

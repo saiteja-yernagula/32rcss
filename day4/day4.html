@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  /*    a:link{
+            color:orange;
+        }
+        a:visited{
+            color:yellow;
+        } -->
+
+       
+
+        a:hover{
+            color:aqua;
+        }
+
+        a:active{
+            color:violet
+        }
+        h1:hover{
+            color:white;
+            background: blue;
+        }
+
+        p:hover{
+           padding-left: 300px;
+        }
+
+        input:focus{
+            color:yellow;
+            background: red;
+         
+
+        } */
+
+        #about:target{
+            background-color: blue;
+        }
+
+        
+        #services:target{
+            background-color: green;
+        }
+
+        
+        #contact:target{
+            background-color: red;
+        }
+
+        /* li:nth-last-child(odd){
+            color:green;
+        } */
+
+        html{
+            --primary-color: blue;
+            --secondary-color:rgb(246, 26, 147);
+            --border: 2px dotted yellow;
+            --border2: 2px dashed yellow;
+        }
+
+        h1{
+            color:var(--secondary-color);
+            border: var(--border);
+        }
+        p{
+            /* background: var(--secondary-color); */
+        }
+        div{
+            border:var(--border2);
+        }
+
+        p::first-letter{
+            font-size: 40px;
+            color:red
+        }   
+        p::first-line{
+            background-color: blue;
+        } 
+        P::selection   {
+            background: yellow;
+        } 
+
+        input::placeholder{
+            color:red;
+        }
+
+        
+      
+
+        /* li:first-child::marker{
+            color:red;
+            font-size: 40px;
+        }
+
+        li{
+            color:green;
+        } */
+
+
+        div::after{
+            content:"* ";
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    combinators
+    1. Descendant combinator (space)
+    2. Child combinator (>)
+    3. Adjacent sibling combinator (+)
+    4. General sibling combinator (~)
+
+    colors
+    name
+    rgb
+    hex
+    hsl
+
+    display: inline or block or inline-blcok
+
+    display:none
+
+    visbility: hidden;
+
+
+    pseudo class selectors
+    it is used to target html elements based on the state or position 
+    of an element
+
+
+    selector:pseudostate{
+    //styles
+    }
+
+    :link
+    :visited
+    :hover
+    :active
+
+    :focus
+    :target
+
+    positions
+    :first-child
+    :last-child
+    :nth-child(num or even or odd)
+    :nth-last-child(num or even or odd)
+
+
+
+    variables
+    it is used to store css property values
+    it is used to make the code more ,reusable,readable and maintainable
+
+
+    variable delclaration
+    :root{
+    --var-name: cssvalue;
+    }
+
+    variable usage
+    border: 1px solid var(--secondary-color);
+
+
+    pseudo element selectors
+    it is used to target html elements based on the 
+    particular part of an element
+
+    selector::pseudopart{
+    //block of code
+    }
+
+    ::first-line
+    ::first-letter
+    ::selection
+    ::marker
+    ::placeholder
+    ::before
+    ::after
+
+
+
+
+
+   
+
+
+
+    -->
+    <!-- <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">content</a>
+
+
+    <h1>some headig</h1>
+
+    <p>some content</p>
+
+    <input type="text" placeholder="enter ur name"> -->
+
+
+    <!-- <a href="#about">about</a>
+    <a href="#services">services</a>
+    <a href="#contact">contact</a>
+
+    <h1 id="about">about section</h1>
+    <h1 id="services">services section</h1>
+    <h1 id="contact">contact section</h1> -->
+
+<!--     
+    <h1>heading 1</h1>
+
+    <p>paragraph 1</p>
+
+    <div>div content</div> -->
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat recusandae voluptate quo necessitatibus nostrum. Provident vitae ullam fugiat sit quos, consectetur cum consequatur, incidunt voluptatum nihil itaque rem autem sapiente?
+    </p>
+
+    <ul>
+        <li>some</li>
+        <li>some</li>
+        <li>some</li>
+    </ul>
+
+    <div>some content</div>
+    <div>some content</div>
+    <div>some content</div>
+
+    <input type="text" placeholder="enter ur name">
+</body>
+</html>

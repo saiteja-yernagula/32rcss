@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:200px;
+        }
+
+        div{
+            display: inline-block;
+        }
+
+        h1{
+            background: lightcoral;
+            padding-top: 20px;
+            padding-left: 20px;
+            margin-left: 50px;
+            margin-top: 50px;
+            height: 100px;
+            width:200px;
+        }
+
+        span{
+            display: inline-block;
+            background: lightgreen;
+            padding-left: 20px;
+            padding-top: 20px;
+            margin-left: 30px;
+             margin-top: 100px;
+            margin-bottom: 100px;
+          height: 400px;
+          width: 600px;
+        }
+
+        .nav{
+            display: none;
+        }
+
+        .nav{
+            display: block;
+        }
+
+        h2+img{
+            visibility: hidden;
+        }
+ 
+        h2:hover+img{
+            visibility: visible;
+        }
+
+        .box1,.box2,.box3{
+            background: lightgreen;
+            padding: 30px;
+        }
+
+        .box2{
+            background: lightblue;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    
+    box model
+    content
+    padding
+    border
+    margin 
+
+    box-sizing: content-box (default)
+                border-box
+
+                *{
+                box-sizing: border-box;
+                margin:0;
+                padding:0;
+                }
+
+                color: 
+                     color name
+                     rgb(0,255,255)
+                     rgba(0,0,0,0.5)
+                     hex- #aaa
+                     hsl(120,50%,50%)
+                     hsla(0-360,100% ,50%,0-1)
+
+                combinators
+                it is used to target html elements based on 
+                relation ship between elements
+
+                descendent selector;
+                  it is denoted by space 
+                  it is used to apply styles to the all chils and
+                  subchilds
+
+                child selector
+                it is denoted by > symbol
+                it is used to apply styles to the direct child
+                 of the parent element
+
+                 adjacent sibling selector
+                 it is denoted by + symbol
+                 it is used to apply styles to the next immidiate sibling of an element
+
+                 general sibling selector
+                 it is denoted by ~ symbol
+                 it is used to apply styles to all the siblings 
+                 of an element
+                 
+
+                display properties
+
+                block: elements are the elements which
+                occupies whole width and which starts in new line
+
+                inline: elements are the elements which
+                occupies required space and which doesn't starts on new line
+
+
+                inline-blocks:
+                elements are the elements which behaves as like inline
+                but take properties like block level
+
+                display:none
+                it hides the elements and space
+
+                visibility :hiddden
+                it hides the elements but keeps its space occupied
+
+                colors:
+                combinators
+                display: inline block inline-bloc
+                hide 
+                display:none or visibility:hidden
+    -->
+
+    <div class="box1">some content</div>
+    <div class="box2">some content</div>
+    <div class="box3">some content</div>
+
+    <h2>main hidden image</h2>
+    <img src="https://coan.codalify.com/wp-content/uploads/2013/07/10-minion-superman-animated-css-html-logo.jpg" alt="">
+
+
+    <div class="nav">
+        <ul>
+            <li>about</li>
+            <li>services</li>
+            <li>contact</li>
+        </ul>
+    </div>
+
+    <h1>block level element 1</h1>
+    <h2>block level element 2</h2>
+    <p>some content <span>span inline content</span> inside paragraph</p>
+            
+       <div>
+
+           <img src="https://coan.codalify.com/wp-content/uploads/2013/07/10-minion-superman-animated-css-html-logo.jpg" alt="">
+           <p>minion 1</p>
+       </div>
+
+       <div>
+
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHc7DMPbWmuA9u5ITfLBMXwitkyfydzeKXYt3S07zJb9BZGqtCd-RjlD96KBvNYtn56vE&usqp=CAU" alt="">
+           <p>minion 2</p>
+       </div>
+        
+<div>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEK2_rdTxtcEHUdpjgmNREBbYUTl7yE1uRevqRs21nDBgW9TWGraQtagg1iofAxKXlEbg&usqp=CAU" alt="">
+    <p>minion 3</p>
+</div>
+       
+    
+
+
+</body>
+</html>
