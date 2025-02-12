@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        flex-container(parent properties
+        )
+
+
+        child( flex-items)
+        order: it controls order of the child items
+              lowest one will moves to first
+
+        flex-basis: it is used to specify the width of the child items
+        
+
+        flex-grow:
+
+
+        flex-shrink;
+
+
+        flex:flex-grow flex-shrink flex-basis;
+
+
+        align-self
+        */
+
+        .container{
+            display: flex;
+        gap:20px;
+        height: 80vh;
+        background: grey;
+        align-items: center;
+        }
+
+        .child{
+            background:lightseagreen;
+            color:white;
+            padding:50px;
+            font-size: 30px;
+            flex-basis: 33%;
+            
+            
+        }
+
+        .child1{
+            /* flex-basis: 50%; */
+            /* flex-grow:1 */
+        }
+        .child2{
+            /* flex-basis:50% */
+            /* flex-grow: 3; */
+            flex-shrink: 10;
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="child child1">content 1</div>
+        <div class="child child2">content2</div>
+        <div class="child child3">content3</div>
+        <!-- <div class="child child4">content4</div> -->
+
+    </div>
+
+</body>
+</html>
