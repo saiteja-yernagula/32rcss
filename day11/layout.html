@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .container>div{
+            padding: 20px;
+            margin: 2px;
+            background: lightcoral;
+            flex-basis: 25%;
+           
+        }
+
+
+        @media screen and (width<768px){
+            .container{
+                grid-template-columns: auto auto;
+            }
+        }
+      
+
+        @media screen and (width<576px){
+            .container{
+                grid-template-columns: auto;
+            }
+         
+        }
+
+
+        /* 
+        min-width 600px;
+                styles will be applied above 600px width
+
+                 
+        max-width:900px
+                  styles will be applied below 900px
+
+        
+        */
+       
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+        <div class="child4">4</div>
+     <div class="child5">5</div>
+        <div class="child6">6</div>
+    </div>
+    
+</body>
+</html>
