@@ -4,8 +4,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            padding:0;
+            margin:0;
+        }
+     .el5,.el6,.el7,.el8,.el9{
+            border :1px solid red;
+            height:100vh;
+        }
+
+        .el1{
+            padding:2% 7%;
+            background: darkblue;
+            color:white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top:0;
+
+        }
+
+        .menubar{
+            display: none;
+        }
+        .el1b{
+            display: flex;
+            gap:5%;
+        }
+
+        .el2{
+            padding:2% 7%;
+            background: darkblue;
+            color:white;
+            display: flex;
+            
+        }
+        .el2a,.el2b{
+            flex-basis: 50%;
+        }
+
+        .p{
+            padding:5%;
+        }
+
+        .px{
+            padding:2% 7%;
+        }
+
+        .el3{
+            text-align: center;
+            padding:2% 7%
+        }
+
+        .el3d{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap:8%;
+            
+        }
+        .el3dchild{
+            padding:5%;
+            box-shadow: 0px 0px 2px 2px grey;
+        }
+
+
+
+        @media screen and (width<600px){
+            .el1b,.el1c{
+                display: none;
+            }
+
+            .menubar{
+            display: block;
+        }
+
+        .el2{
+            flex-direction: column;
+        }
+
+        .el3d{
+            grid-template-columns: auto;
+            height: auto;
+        }
+        .el3{
+            min-height: 100vh;
+        }
+
+        }
+    </style>
 </head>
 <body>
+    <!-- 
+    
+    
+    html 
+    git 
+    css
+
+
+
+    html codex
+    jevelin
+
+
+    points need to be followed
+    1) project must be responsive - (media queries and relative units)
+    2) use grid or flex for layouts
+    3) use postions only when it is necessary
+    4) use third party websites for animations and ideas
+    5) use boiler template code
+        *{
+        box-sizing:border-box;
+        padding:0;
+        margin:0;
+        }
+        html,body{
+        oveflow-x:hidden;
+        }
+    6) research and integrate
+    7) go one extra mile
+
+
+    steps to follow
+    1) analyze the parent sections
+    2) follow wireframe approach
+    3) analyze the child elements
+    4) apply css layouts and all
+    5) apply media queries
+
+
+    <!-- workshop
+    1) dark and light theme
+    2) create responsive navbar
+    3) add carousel using bootstrap
+    4) integrate animate.style to the html webpage
+    5) integrate aos animation to the hmtl webpage
+
+
+    animate.style
+    aos animation
+    get waves.io
+    blobmaker
+    gradient generator
+    css portal
+    code pen- cards, parallax , 3d gltf
+    ui verse
+    -->
+
+    <div class="el1">
+        <h2 class="el1a">Business</h2>
+        <div class="menubar">****</div>
+        <div class="el1b">
+            <div>content</div>
+            <div>content</div>
+            <div>content</div>
+        </div>
+        <div class="el1c">icon</div>
+    </div>
+    <div class="el2"> 
+        <div class="el2a">
+            <h1 class="p">Corporate & Business Site Template <br> by Ayro UI.</h1>
+            <p class="p">We are a digital agency that helps brands to achieve their business outcomes. We see technology as a tool to create amazing things.</p>
+            <button class="" style="margin:10px">get started</button> <span>icon</span> <span>watch intro</span>
+        </div>
+
+        <div class="el2b">
+            <img src="https://demo.ayroui.com/templates/business-template/assets/images/header/hero-image.jpg" alt="" width="100%" height="100%">
+        </div>
+    </div>
+
+
+    <div class="el2" style="background: white;color:black;"> 
+        <div class="el2b">
+            <img src="https://demo.ayroui.com/templates/business-template/assets/images/about/about-img1.jpg" alt="" width="100%" height="100%">
+        </div>
+
+
+        <div class="el2a">
+            <h1 class="p">Corporate & Business Site Template <br> by Ayro UI.</h1>
+            <p class="p">We are a digital agency that helps brands to achieve their business outcomes. We see technology as a tool to create amazing things.</p>
+
+            <a href="content.html" target="hello">linked text</a>
+            <a href="content2.html" target="hello">linked text 2</a>
+            <iframe src="" name="hello" frameborder="0"></iframe>
+            <button class="" style="margin:10px">get started</button> <span>icon</span> <span>watch intro</span>
+        </div>
+
+        
+    </div>
+
+    <div class="el3"> 
+
+        <div class="el3a">our services</div>
+        <h1 class="el3b">Our best services</h1>
+        <p class="el3c">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+        <div class="el3d">
+            <div class="el3dchild">
+                <div>***</div>
+                <h4>Refreshing design</h4>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+
+            <div class="el3dchild">
+                <div>***</div>
+                <h4>Refreshing design</h4>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+
+            <div class="el3dchild">
+                <div>***</div>
+                <h4>Refreshing design</h4>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+
+            <div class="el3dchild">
+                <div>***</div>
+                <h4>Refreshing design</h4>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+
+            <div class="el3dchild">
+                <div>***</div>
+                <h4>Refreshing design</h4>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+
+            <div class="el3dchild">
+                <div>***</div>
+                <h4>Refreshing design</h4>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+
+          
+         </div>
+    </div>
+    <div class="el4"> section 4</div>
+    <div class="el5"> section 5</div>
+    <div class="el6"> section 6</div>
+    <div class="el7"> section 7</div>
+    <div class="el8"> section 8</div>
+    <div class="el9"> section 9</div>
+    
     
 </body>
 </html>

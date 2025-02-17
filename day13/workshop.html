@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    .container{
+        display: grid;
+        grid-template-columns:auto auto ;
+        height:100vh;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- integration
+     debugging skills
+     
+     1) dark and light toggle option
+     2) responsive navbar
+     3) integrate bootstrap carousel
+     4) integrate animate.style
+     5) integrate aos library
+
+
+     1) animate.style
+     2) aos library
+     3) get waves
+     4) glass morphism generator
+     5) uiverse
+     6) css portal
+     7) gradients generator
+     8) code pen
+     -->
+
+     <div class="container">
+        <div class="child" style="background-color: lightgreen;" data-aos="fade-left">some conten</div>
+        <div class="child" style="background: lightsalmon;" data-aos="fade-right">some conten</div>
+     </div>
+
+     <div class="container">
+         <div class="child" style="background: lightsalmon;">some conten</div>
+        <div class="child" style="background-color: lightgreen;">some conten</div>
+     </div>
+
+     <div class="container">
+        <div class="child" data-aos="flip-left" style="background-color: rgb(174, 144, 238);">some conten</div>
+        <div class="child" data-aos="flip-right" style="background: rgb(4, 163, 180);">some conten</div>
+     </div>
+
+     <script>
+        AOS.init();
+      </script>
+</body>
+</html>
