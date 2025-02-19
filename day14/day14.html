@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container1{
+            background: yellow;
+            padding:20px;
+            transition-property: background-color;
+            transition-duration: 2s;
+        }
+        .container1:hover{
+            background-color: red;
+        }
+
+        .container2{
+            height: 100px;
+            width:200px;
+            background: lightsalmon;
+            padding: 20px;
+            transition-property:all;
+            transition-duration:2s;
+        }
+        .container2:hover{
+            background: red;
+            height: 200px;
+            width:500px
+        }
+
+        .container3{
+            height: 100px;
+            background: lightseagreen;
+            transition-property: height;
+            transition-duration: 2s;
+        }
+
+        .container3:hover{
+            height: 300px
+
+        }
+
+        .container4{
+            width: 200px;
+            height: 100px;
+            background: lightpink;
+            transition-property: margin-left;
+            transition-duration: 2s;
+            transition-delay: 2s;
+            transition-timing-function: lin;
+        }
+
+        .container4:hover{
+            margin-left: 40px;
+        } */
+
+        .element{
+            margin:100px;
+            width:200px;
+            height:200px;
+            background-color: lightseagreen;
+            transition: all 2s;
+
+
+           
+
+
+        }
+      .element:hover{
+        transform: skew(20deg,20deg);
+      }
+
+      .btn1:hover~img{
+        transform: translate(100px ,100px);
+        transition: all 2s;
+
+      }
+
+      .container{
+        background: red;
+        height: 100vh;
+        background-image: url(code.png) ;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-position: top right;
+       
+      }
+    
+
+      .container2{
+        background: red;
+        height: 100vh;
+        background-image: url(Doraemon_characters.webp);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+      }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- 
+    transform : it controls the postion and appearance of an element
+
+    transform:translate(xaxis, yaxis)
+              translateX()
+              translateY()
+
+    transform: scale(x,y)
+               scale(1.5,1.5)
+               scaleX(1.2)
+               scaleY(1.2)
+
+
+    transform: rotate(360deg)  //clockwise
+               rotate(-360deg)  //anti clockwise
+               rotateX(90deg)
+               rotateY(90deg)
+
+    transform: skew(x, y)
+
+    
+    
+    -->
+
+    <div class="container"></div>
+    <div class="container2"></div>
+    <!-- <div class="btn1">button1</div>
+    <div class="btn2">button2</div>
+    <div class="btn3">button3</div>
+    <div class="btn4">button4</div>
+    <img src="code.png" alt=""> -->
+
+   
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- 
+
+    transitions
+
+    transition-property: background;
+                         width
+                         height
+                         margin-left
+
+    transition-duration: 2s or 1000ms
+
+    transiton-delay:2s;
+
+    transition-timing-function:
+                               linear
+                               ease-in
+                               ease-out
+                               ease-in-out
+                               ease
+     
+    transition:property duration  timing-function delay;
+
+    
+
+
+
+ 
+    
+    
+    -->
+
+    <!-- <div class="container1">some content</div>
+
+    <div class="container2">width</div>
+
+    <div class="container3">height</div>
+
+    <div class="container4">move</div> -->
+</body>
+</html>

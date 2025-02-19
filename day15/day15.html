@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+
+
+        transitions
+        a   timing    b
+        transition-property:all
+        transition-duration:0.5s
+        transition-delay:
+        transition-timing-function: ease-in-out
+
+        transform- controls postion and appearance
+
+        transform:translate(x,y) 
+                  rotate(20deg)
+                  scale(1.2,1.4)
+                  skew(20deg,30deg)
+                  
+
+
+        defining an animation
+
+        @keyframes colorchange{
+        //stages
+        from{
+        background:red
+        
+        }
+        to{
+        background:green
+        }
+        }
+
+
+        usage
+
+        h1{
+        animation-name:colorchange;
+
+        }
+                  
+        */
+/* 
+        h1{
+            animation-name: colorchange;
+            animation-duration: 4s;
+        }
+
+        .el1{
+            background-color: lightsalmon;
+            height: 200px;
+            width:200px;
+            animation-name:colorchange;
+            animation-duration: 5s;
+            /* animation-delay:2s */
+            /* animation-iteration-count: infinite; */
+        /* } */ 
+
+   
+
+        /* @keyframes colorchange{
+
+            0%{
+                background-color: red;
+            }
+         
+            66%{
+                background-color: blue;
+            }
+            100%{
+                background-color: aquamarine;
+            }
+
+
+            animation-name
+            animation-duration
+            animation-delay
+            animation-iteration-count
+            animation-fill-mode
+            animation-direction: 
+                 norma
+                 reverse
+                 alternate - noram rev nor rev
+                 alternate-reverse -  rev nor rev nor
+
+
+            animation-timing-function:
+
+
+
+
+            attribute selectors
+            gradients
+            float
+            filter
+            drop shadow
+            object fit and object position
+            persceptive
+
+            
+        } */
+/* 
+        .el1{
+            background-color: lightsalmon;
+            width:200px;
+            padding:20px;
+            animation-name: move;
+            animation-duration: 4s;
+            /* animation-fill-mode: both;
+            animation-delay: 4s; */
+            /* animation-direction: alternate-reverse;
+            animation-iteration-count: 3;
+        } */
+/* 
+        @keyframes move{
+            0%{
+                transform: translate(0,0);
+                background-color: yellow;
+            }
+            33%{
+                transform: translate(600px,0);
+            }
+            66%{
+                transform: translate(600px,200px);
+            }
+            100%{
+                transform: translate(0,200px);
+            }
+        }  
+            
+        
+        
+        
+        */
+
+        
+        .el1{
+            background-color: lightsalmon;
+            width:100px;
+            padding:10px;
+        margin:10px;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+
+
+    @keyframes move{
+        from{
+            transform: translate(0,0);
+        }
+        to{
+            transform: translate(600px,0);
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <!-- <div class="el1">move</div> -->
+
+   
+    <!-- <div class="el1">some content</div> -->
+
+    <div class="el1" style="animation-timing-function:ease-in ;">ease in</div>
+    <div class="el1" style="animation-timing-function:ease-out ;">ease out</div>
+    <div class="el1" style="animation-timing-function:ease-in-out ;">ease-in-out</div>
+    <div class="el1" style="animation-timing-function:ease ;">ease</div>
+    <div class="el1" style="animation-timing-function:linear ;">linear</div>
+    
+    
+</body>
+</html>
